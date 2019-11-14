@@ -4,37 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Список продуктів</title>
+    <style>
+        legend {
+            color: rgb(85, 0, 0);
+            font-size: 20pt;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        fieldset {
+            background-color: silver;
+        }
+
+        l1 {
+            color: black;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        header {
+            background-color: silver;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: rgba(202, 201, 199, 0.801);
+        }
+
+        .block {
+            background-color: silver;
+            font-weight: bold;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button {
+            background-color: silver;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        hr {
+            height: 4px;
+            background-color: black;
+        }
+    </style>
 </head>
+<header>
+    <h1>Домашнє завдання</h1>
+</header>
 
 <body>
-    <form action="#">
+    <form action="perehid">
         <fieldset>
             <legend>Список продуктів</legend>
             <ol>
-                <l1>
-                    <input type="checkbox" id="milk">
-                    <label for="milk">Молоко</label><br>
-                </l1>
-                <l1>
-                    <input type="checkbox" id="water">
-                    <label for="water">Вода</label><br>
-                </l1>
-                <l1>
-                    <input type="checkbox" id="bread">
-                    <label for="bread">Хліб</label><br>
-                </l1>
-                <l1>
-                    <input type="checkbox" id="butter">
-                    <label for="butter">Масло</label><br>
-                </l1>
-                <l1>
-                    <input type="checkbox" id="juice">
-                    <label for="juice">Сік</label><br>
-                </l1>
+                <l1><input type="checkbox" id="milk"><label for="milk">Молоко</label><br></l1>
+                <l1><input type="checkbox" id="water"><label for="water">Вода</label><br></l1>
+                <l1><input type="checkbox" id="bread"><label for="bread">Хліб</label><br></l1>
+                <l1><input type="checkbox" id="butter"><label for="butter">Масло</label><br></l1>
+                <l1><input type="checkbox" id="juice"><label for="juice">Сік</label><br></l1>
             </ol>
         </fieldset>
-    </form><br>
-    <a href="posulannia.html">Next</a>
+    </form>
+    <form action="posulannia.html" target="_blank">
+        <button type="button">Next</button>
+        <hr>
+        <footer>
+            <div class="block">НЕ ЗАБУДЬ МАНДАРИНИ</div>
+        </footer>
+        <hr>
+    </form>
 </body>
 
 </html>
